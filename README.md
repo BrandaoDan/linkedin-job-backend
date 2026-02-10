@@ -32,36 +32,28 @@ API desenvolvida em Node.js com Express para automatizar a busca de vagas no fee
 
 ---
 
-## 📦 Estrutura
-```bash
+# 📁 Estrutura do projeto
 backend/
- ├── services/
- │   └── linkedin.js      
- ├── utils/
- ├── routes.js           
- ├── server.js          
- └── README.md
+├── services/
+│   └── linkedin.js
+├── utils/
+├── routes.js
+├── server.js
+└── README.md
 
- ---
+# 🔌 Endpoint
+POST /api/buscar-vagas
 
-
-
- 🔌 Endpoint
-
- POST `/api/buscar-vagas`
-
-**Body (JSON):**
-```json
+# 📦 Body (JSON)
 {
   "email": "seu_email",
   "senha": "sua_senha",
   "tags": ["dev", "remoto", "junior"]
 }
 
-```bash
-|| RODANDO LOCALMENTE ||
-
+# ▶️ Rodando localmente
 cd backend
 npm install
 npm run dev
+
 
